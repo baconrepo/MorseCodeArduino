@@ -1,3 +1,6 @@
+//references: https://www.instructables.com/id/Morse-code-with-arduinoLED/
+//: https://www.instructables.com/id/Morse-Code-Decoder/
+
 int sensor=A1;  //photosensor Analog 1
 int val =0;
 unsigned long t1,t2,signal_len;
@@ -57,9 +60,9 @@ val=analogRead(sensor);
     if (input == '8'){n8();}
     if (input == '9'){n9();}
     //Serial.println(input);
-    if(voltage>1){t1=millis();}
-    if(voltage<1){t2=millis();signal_len=(t2-t1);}
-    if(signal_len<600 && signal_len>50){Serial.print('dash');}
+    //if(voltage>1){t1=millis();}
+    //if(voltage<1){t2=millis();signal_len=(t2-t1);}
+    //if(signal_len<600 && signal_len>50){Serial.print('dash');}
 
   //}
 }
